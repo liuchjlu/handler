@@ -1,0 +1,6 @@
+  k8s_addr: 192.168.12.49
+  k8s_cfg: /home/liuchjlu/.kube/config
+  etcd_addr: http://192.168.12.49:2379
+  nfs_server: 192.168.12.16
+  #image: 192.168.12.41:5000/imagebasedl_hvd0.11.0:latest
+  #image: 192.168.12.41:5000/test:latest

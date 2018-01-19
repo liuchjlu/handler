@@ -1,0 +1,35 @@
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+go run: no go files listed
+time="2017-12-19T22:25:41+08:00" level=info msg="Your Task info: {0-1513693541 0 2 /home/liuch/test.sh}" 
+Your Task has been submit. Please wait for the schduleing.
+time="2017-12-19T22:25:50+08:00" level=info msg="Your Task info: {1-1513693550 1 2 /home/liuch/test.sh}" 
+time="2017-12-19T22:25:50+08:00" level=info msg="Your Task info: {7-1513693550 7 2 /home/liuch/test.sh}" 
+Your Task has been submit. Please wait for the schduleing.
+Your Task has been submit. Please wait for the schduleing.
+time="2017-12-19T22:25:50+08:00" level=info msg="Your Task info: {6-1513693550 6 2 /home/liuch/test.sh}" 
+Your Task has been submit. Please wait for the schduleing.
+time="2017-12-19T22:25:50+08:00" level=info msg="Your Task info: {4-1513693550 4 2 /home/liuch/test.sh}" 
+Your Task has been submit. Please wait for the schduleing.
+time="2017-12-19T22:25:51+08:00" level=info msg="Your Task info: {9-1513693551 9 2 /home/liuch/test.sh}" 
+time="2017-12-19T22:25:51+08:00" level=info msg="Your Task info: {5-1513693551 5 2 /home/liuch/test.sh}" 
+time="2017-12-19T22:25:51+08:00" level=info msg="Your Task info: {8-1513693551 8 2 /home/liuch/test.sh}" 
+time="2017-12-19T22:25:51+08:00" level=fatal msg="dialhttp:dial tcp [::1]:1111: getsockopt: connection refused" 
+time="2017-12-19T22:25:51+08:00" level=info msg="Your Task info: {2-1513693551 2 2 /home/liuch/test.sh}" 
+time="2017-12-19T22:25:51+08:00" level=fatal msg="dialhttp:dial tcp [::1]:1111: getsockopt: connection refused" 
+time="2017-12-19T22:25:51+08:00" level=fatal msg="call SubmitTask:read tcp 127.0.0.1:46912->127.0.0.1:1111: read: connection reset by peer" 
+exit status 1
+exit status 1
+time="2017-12-19T22:25:51+08:00" level=fatal msg="dialhttp:dial tcp [::1]:1111: getsockopt: connection refused" 
+exit status 1
+exit status 1
+time="2017-12-19T22:25:52+08:00" level=info msg="Your Task info: {3-1513693552 3 2 /home/liuch/test.sh}" 
+time="2017-12-19T22:25:52+08:00" level=fatal msg="dialhttp:dial tcp [::1]:1111: getsockopt: connection refused" 
+exit status 1

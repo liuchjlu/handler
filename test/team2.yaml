@@ -1,0 +1,3 @@
+user_name: test
+gpu_num: 2
+script_path: /home/liuch/test.sh

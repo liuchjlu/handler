@@ -1,0 +1,7 @@
+[34mINFO[0m[0000] main.main():Start  Main                      
+[37mDEBU[0m[0000] InitConfig success:%!(EXTRA datatype.SysConfig={192.168.12.49 /home/liuchjlu/.kube/config http://192.168.12.49:2379 192.168.12.16}) 
+[34mINFO[0m[0000] Listening...                                 
+[34mINFO[0m[0000] cli.Run() queue.size:0                       
+[34mINFO[0m[0005] cli.Run() queue.size:0                       
+[34mINFO[0m[0010] cli.Run() queue.size:0                       
+[34mINFO[0m[0015] cli.Run() queue.size:0                       

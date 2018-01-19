@@ -1,0 +1,51 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{.Job_id}}
+  namespace: default
+spec:
+  completions: 1
+  parallelism: 1
+  template:
+    spec:
+      containers:
+      - name: {{.Job_id}}
+        image: {{.Image}}
+        env:
+        - name: "script_path"
+          value: "{{.Script_path}}"
+        - name: "task_id"
+          value: "{{.Task_id}}"
+        - name: "gpu_num"
+          value: "{{.Gpu_num}}"
+        - name: "etcd_addr"
+          value: "{{.Etcd_addr}}"
+        - name: "k8s_addr"
+          value: "{{.K8s_addr}}"
+        ports:
+        - containerPort: 2222
+        #imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
+        resources:
+          limits:
+            alpha.kubernetes.io/nvidia-gpu: {{.Gpu_num}}
+          requests:
+            alpha.kubernetes.io/nvidia-gpu: {{.Gpu_num}}
+        command: ["/bin/bash", "{{.Start_path}}"]
+        #command: ["/bin/bash", "/test.sh"]
+        volumeMounts:
+        - name: nfs-storage
+          mountPath: {{.Mount_path}}
+        - name: nvidia-driver
+          mountPath: /usr/lib64/nvidia
+      volumes:
+      - name: nfs-storage
+        nfs:
+         server: {{.Nfs_server}}
+         path: {{.Nfs_path}}
+      - name: nvidia-driver
+        hostPath:
+          path: /usr/lib64/nvidia
+      restartPolicy: OnFailure
+      nodeSelector:
+        kubernetes.io/hostname: {{.Host_node}}
